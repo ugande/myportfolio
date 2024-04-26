@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --black: #181818;
+  --beige: #f6eee2;
+  --red: #e74c3c;
+  --goldenrod: #f3cc1d;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.sticky {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    padding-top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+.hero-section {
+  background-image: url("../img/pexels-neo-853421-2653362.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
+
+.hero-content {
+  font-family: ubuntu, sans-serif;
+  width: 93%;
+  margin: 0 auto;
+  margin-top: 130px;
+}
+
+.hero-content h2 {
+  font-size: 4.7em;
+  margin-bottom: 5px;
+}
+
+.hero-content .role {
+  font-size: 3em;
+}
+
+.hero-content .role .role-inner {
+  color: orange;
+}
+
+.hero-content small {
+  font-size: 1.8em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.hero-content .cta {
+  display: block;
+  margin-top: 50px;
+}
+
+.hero-content .cta > a {
+  background-color: transparent;
+  border: 2px solid orange;
+  color: #efefef;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  transition: all 0.3s ease;
+}
+
+.hero-content .cta > a:hover {
+  background-color: orange;
+}
+
+
+
+.hero-section .main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: poppins, sans-serif;
+  padding: 20px 50px 10px 50px;
+}
+
+.hero-section .main-header .logo {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-section .main-header .logo > span {
+    color: orange;
+}
+
+/* Main navigation */
+.main-nav li {
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-right: 35px;
+}
+
+/* About section */
+.about-section {
+  width: 93%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.about-section .about-section-img > img {
+  height: 650px;
+  width: 90%;
+}
+
+.about-section .two-columns {
+  display: flex;
+}
+
+.about-section .two-columns > * {
+  width: 50%;
+  padding: 1rem;
+}
+
+.about-section .two-columns .about-section-text {
+  color: #181818;
+  padding-top: 170px;
+}
+
+.about-section .two-columns .about-section-text > small {
+  display: block;
+  font-family: ubuntu, sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+.about-section .two-columns .about-section-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+.about-section .two-columns .about-section-text span {
+  color: orange;
+  font-size: 1.5em;
+}
+
+.about-section .two-columns .about-section-text p {
+  color: #1a1a1a;
+  font-family: poppins, sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.about-section .two-columns .about-section-text h2, .about-section .two-columns .about-section-text span {
+  font-family: ubuntu, sans-serif;
+}
+
+/* Project section */
+.project-section {
+  width: 93%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+
+.project-section h2 {
+  font-family: ubuntu, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-section .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 5px;
+  width: 90%;
+  margin: auto;
+}
+
+.project-section .box {
+  color: #555;
+  font-size: 2em;
+  padding: .3em;
+  text-align: center;
+}
+
+.project-section .box h5 {
+  font-family: ubuntu, sans-serif;
+  margin-top: 8px;
+}
+
+.project-section .box h5 > a {
+  color: orange;
+}
+
+/* Skills section */
+.skills-section {
+  width: 93%;
+  margin: 0 auto;
+  font-family: ubuntu, sans-serif;
+  margin-bottom: 100px;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-family: ubuntu, sans-serif;
+  margin-bottom: 15px;
+}
+
+.skills-section .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 5px;
+  width: 90%;
+  margin: auto;
+}
+
+.skills-section .boxes {
+  color: #555;
+  font-size: 1em;
+  padding: .3em;
+  text-align: center; 
+}
+
+.skills-section .boxes h3 {
+  margin-bottom: 10px;
+}
+
+/* Contact section */
+.contact-me {
+  width: 93%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.contact-me h2 {
+  text-align: center;
+  font-family: ubuntu, sans-serif;
+  margin-bottom: 20px;
+}
+
+.contact-me > div {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.contact-me > div p {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+}
+
+/* Footer section */
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: ubuntu, sans-serif;
+  text-align: center;
+  padding: 1.5em;
+}
